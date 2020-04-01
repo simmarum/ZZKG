@@ -12,7 +12,8 @@ __global__ void multiplyBy2(unsigned int *data, unsigned int n) {
 	if (tid<n) {
 		data[tid] = 2 * data[tid];
 	}
-}
+}
+
 
 int main() {
 	thrust::host_vector<unsigned int> h_tab;
